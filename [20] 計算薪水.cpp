@@ -1,10 +1,12 @@
-#include <stdio.h>
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
 
 int main() {
     double n, m;
 
-    while(scanf("%lf %lf", &n, &m) != EOF) {
-
+    while (cin >> n >> m) {
         double result = 0.0;
 
         if (n <= 60) {
@@ -15,8 +17,8 @@ int main() {
             result = 60 * m + 60 * m * 1.33 + (n - 120) * m * 1.66;
         }
 
-        printf("%.1f\n", result);
+        cout << fixed << setprecision(1) << result << endl;
     }
-    
+
     return 0;
 }
