@@ -1,13 +1,15 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main() {
     int a, b, c;
 
-    while (scanf("%d %d %d", &a, &b, &c) != EOF) {
+    while (cin >> a >> b >> c) {
         if ((a + b > c) && (a + c > b) && (b + c > a)) {
-            printf("fit\n");
+            cout << "fit" << endl;
         } else {
-            printf("unfit\n");
+            cout << "unfit" << endl;
         }
     }
 
