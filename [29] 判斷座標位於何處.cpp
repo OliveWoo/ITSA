@@ -3,19 +3,23 @@
 using namespace std;
 
 int main() {
-    int month;
+    int x, y;
 
-    while (cin >> month) {
-        if (month >= 3 && month <= 5) {
-            cout << "Spring" << endl;
-        } else if (month >= 6 && month <= 8) {
-            cout << "Summer" << endl;
-        } else if (month >= 9 && month <= 11) {
-            cout << "Autumn" << endl;
-        } else if (month == 12 || month == 1 || month == 2) {
-            cout << "Winter" << endl;
+    while (cin >> x >> y) {
+        if (x == 0 && y == 0) {
+            cout << "Origin" << endl;
+        } else if (x == 0) {
+            cout << "y-axis" << endl;
+        } else if (y == 0) {
+            cout << "x-axis" << endl;
+        } else if (x > 0 && y > 0) {
+            cout << "1st Quadrant" << endl;
+        } else if (x < 0 && y > 0) {
+            cout << "2nd Quadrant" << endl;
+        } else if (x < 0 && y < 0) {
+            cout << "3rd Quadrant" << endl;
         } else {
-            cout << "Invalid month" << endl;
+            cout << "4th Quadrant" << endl;
         }
     }
 
