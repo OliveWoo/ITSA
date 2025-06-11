@@ -1,18 +1,19 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main() {
     int n;
 
-    while(scanf("%d", &n) != EOF) { 
-
-        long long int result = 1;
+    while (cin >> n) {
+        long long result = 1;
 
         while (n > 0) {
             result *= n;
             n--;
         }
 
-        printf("%lld\n", result);
+        cout << result << endl;
     }
 
     return 0;
