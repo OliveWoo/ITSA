@@ -1,13 +1,17 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main() {
     int a, b, temp;
-    scanf("%d %d", &a, &b);
+    cin >> a >> b;
+
     while (b != 0) {
         temp = b;
         b = a % b;
         a = temp;
     }
-    printf("%d\n", a);
+
+    cout << a << endl;
     return 0;
 }
