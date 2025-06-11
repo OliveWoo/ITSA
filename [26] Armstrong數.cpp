@@ -1,8 +1,10 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main() {
     int N;
-    scanf("%d", &N);
+    cin >> N;
 
     int original = N;
     int sum = 0;
@@ -14,9 +16,9 @@ int main() {
     }
 
     if (sum == original) {
-        printf("Yes\n");
+        cout << "Yes" << endl;
     } else {
-        printf("No\n");
+        cout << "No" << endl;
     }
 
     return 0;
