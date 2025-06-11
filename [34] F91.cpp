@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int f91(int n) {
     if (n <= 100) {
@@ -10,12 +12,12 @@ int f91(int n) {
 
 int main() {
     int k;
-    scanf("%d", &k);
+    cin >> k;
 
     int n;
     for (int i = 0; i < k; i++) {
-        scanf("%d", &n);
-        printf("%d\n", f91(n));
+        cin >> n;
+        cout << f91(n) << endl;
     }
 
     return 0;
