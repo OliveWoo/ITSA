@@ -1,10 +1,14 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
 
 int main() {
     int a, b;
-    scanf("%d %d", &a, &b);
+    cin >> a >> b;
+
     double area = (a * b) / 2.0;
-    printf("%.1f\n", area);
+    cout << fixed << setprecision(1) << area << endl;
+
     return 0;
 }
