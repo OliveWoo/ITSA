@@ -1,19 +1,20 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main() {
     int N, sum = 0;
-
-    scanf("%d", &N);
+    cin >> N;
 
     for (int i = 1; i <= N; i++) {
         sum += i;
         if (i != 1) {
-            printf(" + ");
+            cout << " + ";
         }
-        printf("%d", i);
+        cout << i;
     }
-    
-    printf(" = %d\n", sum);
+
+    cout << " = " << sum << endl;
 
     return 0;
 }
