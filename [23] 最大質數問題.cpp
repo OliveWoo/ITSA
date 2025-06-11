@@ -1,5 +1,6 @@
-#include <stdio.h>
-#include <stdbool.h>
+#include <iostream>
+
+using namespace std;
 
 bool is_prime(int num) {
     if (num < 2) return false;
@@ -11,11 +12,11 @@ bool is_prime(int num) {
 
 int main() {
     int N;
-    scanf("%d", &N);
+    cin >> N;
 
     for (int i = N - 1; i > 1; i--) {
         if (is_prime(i)) {
-            printf("%d\n", i);
+            cout << i << endl;
             break;
         }
     }
