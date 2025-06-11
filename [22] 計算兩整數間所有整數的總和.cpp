@@ -1,9 +1,11 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main() {
     int a, b, sum = 0;
 
-    scanf("%d %d", &a, &b);
+    cin >> a >> b;
 
     if (a > b) {
         int temp = a;
@@ -15,7 +17,7 @@ int main() {
         sum += i;
     }
 
-    printf("%d\n", sum);
+    cout << sum << endl;
 
     return 0;
 }
